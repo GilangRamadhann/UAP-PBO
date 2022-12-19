@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #a0a0a0;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bokunouap.DataPenjualanController">
+   <children>
+      <Text layoutX="234.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Penjualan">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="389.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nama Produk">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TableView fx:id="viewProduk" layoutX="14.0" layoutY="103.0" prefHeight="274.0" prefWidth="325.0">
+        <columns>
+          <TableColumn fx:id="viewNamaProduk" prefWidth="125.0" text="Nama Produk" />
+            <TableColumn fx:id="viewHarga" prefWidth="100.0" text="Harga" />
+            <TableColumn fx:id="viewJumlah" prefWidth="100.0" text="Jumlah" />
+        </columns>
+      </TableView>
+      <TextField fx:id="fieldNama" layoutX="390.0" layoutY="130.0" prefHeight="25.0" prefWidth="175.0" />
+      <Button fx:id="btnTambah" layoutX="500.0" layoutY="320.0" mnemonicParsing="false" onAction="#toTambah" text="Tambah">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCekKeranjang" layoutX="389.0" layoutY="320.0" mnemonicParsing="false" onAction="#toKeranjang" text="Cek Keranjang">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnKembali" layoutX="11.0" layoutY="11.0" mnemonicParsing="false" onAction="#toKembali" text="Kembali">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Text layoutX="389.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Harga">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="fieldHarga" layoutX="390.0" layoutY="193.0" prefHeight="25.0" prefWidth="175.0" />
+      <Text layoutX="389.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jumlah">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="fieldJumlah" layoutX="390.0" layoutY="258.0" prefHeight="25.0" prefWidth="175.0" />
+   </children>
+</AnchorPane>
